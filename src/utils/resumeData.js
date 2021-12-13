@@ -31,7 +31,7 @@ const resume =
   birthday: "N/A",
   email: "kangrand@ycp.edu",
   address: "York PA, USA",
-  phone: "N/A",
+  phone: "717-471-1782",
 
   socials: {
     // Facebook: {
