@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b7f0b544.chunk.css",
+    "main.js": "/static/js/main.b5b146f9.chunk.js",
+    "main.js.map": "/static/js/main.b5b146f9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.98698945.js",
+    "runtime-main.js.map": "/static/js/runtime-main.98698945.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.d8d78f69.chunk.js": "/static/js/2.d8d78f69.chunk.js",
+    "static/js/2.d8d78f69.chunk.js.map": "/static/js/2.d8d78f69.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.b7f0b544.chunk.css.map": "/static/css/main.b7f0b544.chunk.css.map",
+    "static/js/2.d8d78f69.chunk.js.LICENSE.txt": "/static/js/2.d8d78f69.chunk.js.LICENSE.txt",
+    "static/media/IoTImg.5eb28a4d.jpg": "/static/media/IoTImg.5eb28a4d.jpg",
+    "static/media/Karl_Doudy_Angrand_Resume.f3d876fa.pdf": "/static/media/Karl_Doudy_Angrand_Resume.f3d876fa.pdf",
+    "static/media/index.css": "/static/media/bg.54815803.png",
+    "static/media/karl.2417a6fa.jpeg": "/static/media/karl.2417a6fa.jpeg",
+    "static/media/microcontroller.e48421d9.jpeg": "/static/media/microcontroller.e48421d9.jpeg",
+    "static/media/robotImg.207b6522.jpg": "/static/media/robotImg.207b6522.jpg",
+    "static/media/software.aeecc6ac.jpeg": "/static/media/software.aeecc6ac.jpeg",
+    "static/media/webdevImg.41a3d8cf.png": "/static/media/webdevImg.41a3d8cf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.98698945.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.d8d78f69.chunk.js",
+    "static/css/main.b7f0b544.chunk.css",
+    "static/js/main.b5b146f9.chunk.js"
+  ]
+}
