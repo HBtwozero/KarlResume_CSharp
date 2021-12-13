@@ -24,7 +24,7 @@ import webdevImg from "../assets/images/webdevImg.png";
 import IoTImg from "../assets/images/IoTImg.jpg";
 import robotImg from "../assets/images/robotImg.jpg";
 export default {
-  name: "Karl Doudy Angrand",
+  name: "Karl Doudy Angrand - Haiti",
   title: "Electrical Engineer",
   displayImage: "displayImage.jpg",
   birthday: "N/A",
