@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+:root {
+    /* --main-color: #ffc500; */
+    --main-color: #ffc500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top_60 {
+    margin-top: 60px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.marginbottom_abtme {
+    margin-bottom: 30px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.paddingbottom_abtme {
+    padding-bottom: 45px !important;
 }
 
-.App-link {
-  color: #61dafb;
+.paddingtop_abtme {
+    padding-top: 65px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container_shadow {
+    box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
+}
+
+@media (max-width: 991px) {
+    .top_60 {
+        margin-top: 30px !important;
+    }
+}
+
+.main_content {
+    background-color: white !important;
+    min-height: 100vh !important;
+    border-radius: 6px !important;
+    -moz-border-radius: 6px !important;
+    -webkit-border-radius: 6px !important;
+    margin-bottom: 30px !important;
+    padding: 30px;
+}
+
+.section_title {
+    position: relative;
+    display: inline-block;
+    padding: 0 3px;
+}
+
+.section_title .section_title_text {
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    margin: 0;
+}
+
+.section_title span {
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    bottom: 0;
+    opacity: 0.4;
+    left: 0;
+    background-color: var(--min-color);
+}
+
+.bgccolor {
+    background-color: #fafafa !important;
+}
+
+.pb_50 {
+    padding-bottom: 50px !important;
+}
+
+.p_15 {
+    padding: 15px !important;
+}
+
+.pb_45 {
+    padding-bottom: 45px !important;
 }
