@@ -23,8 +23,9 @@ import softwareImg from "../assets/images/software.jpeg";
 import webdevImg from "../assets/images/webdevImg.png";
 import IoTImg from "../assets/images/IoTImg.jpg";
 import robotImg from "../assets/images/robotImg.jpg";
-export default {
-  name: "Karl Doudy Angrand - Haiti",
+const resume =
+ {
+  name: "Karl Doudy Angrand",
   title: "Electrical Engineer",
   displayImage: "displayImage.jpg",
   birthday: "N/A",
@@ -243,3 +244,5 @@ export default {
     // }
   ]
 };
+
+export default resume;
