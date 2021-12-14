@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KRMDataManager", "KRMDataMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KRMApiResume", "KRMApiResume\KRMApiResume.csproj", "{54E2FEFF-3B9E-4BFA-85E6-17F7484629B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KRMDataManager.Library", "KRMDataManager.Library\KRMDataManager.Library.csproj", "{A5C2F72E-E5C1-4C68-917D-385FF68D8368}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{54E2FEFF-3B9E-4BFA-85E6-17F7484629B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54E2FEFF-3B9E-4BFA-85E6-17F7484629B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54E2FEFF-3B9E-4BFA-85E6-17F7484629B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C2F72E-E5C1-4C68-917D-385FF68D8368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C2F72E-E5C1-4C68-917D-385FF68D8368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C2F72E-E5C1-4C68-917D-385FF68D8368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C2F72E-E5C1-4C68-917D-385FF68D8368}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

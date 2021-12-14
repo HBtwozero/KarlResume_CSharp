@@ -9,7 +9,7 @@ namespace KRMApiResume.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController: Controller
+    public class ValuesController : Controller
     {
 
         List<BlogPost> Posts = new List<BlogPost>
@@ -35,9 +35,8 @@ namespace KRMApiResume.Controllers
         };
 
         //Get api/values
-        [HttpGet]
-
         // Get a list of blog post from database
+        [HttpGet]
         public ActionResult<IEnumerable<BlogPost>> Get()
         {
             return Posts;

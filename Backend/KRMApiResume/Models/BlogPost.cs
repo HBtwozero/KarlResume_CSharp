@@ -17,3 +17,4 @@ namespace KRMApiResume.Models
 }
 
 //https://medium.com/@kristaps.strals/create-your-own-blog-net-core-f3e6fefafb06
+//https://docs.microsoft.com/en-us/aspnet/web-api/overview/web-api-routing-and-actions/create-a-rest-api-with-attribute-routing
