@@ -26,3 +26,7 @@ const firebaseConfig = {
   appId: "1:504754857144:web:883253b7cbfa565548804d",
   measurementId: "G-1KVFT2E2MY"
 };
+https://medium.com/@kristaps.strals/create-your-own-blog-net-core-f3e6fefafb06
+https://thecodeblogger.com/2021/06/25/database-schema-for-blog-management-using-net-ef-core/
+https://mysql.tutorials24x7.com/blog/guide-to-design-a-database-for-blog-management-in-mysql
+https://blog.quest.com/using-database-schemas-in-sql-server/
