@@ -15,9 +15,9 @@ function App() {
   return (
     <Container className="top_60">
       <Grid container>
-        <Grid item xs={12} sm={12} md={4} lg={3}>
+        {/* <Grid item xs={12} sm={12} md={4} lg={3}>
           <Profile />
-        </Grid>
+        </Grid> */}
         <Grid item xs>
           <Router>
             <Header />
@@ -42,6 +42,9 @@ function App() {
           </Router>
 
           <Footer />
+        </Grid>
+        <Grid item xs={12} sm={12} md={4} lg={3}>
+          <Profile />
         </Grid>
       </Grid>
     </Container>
