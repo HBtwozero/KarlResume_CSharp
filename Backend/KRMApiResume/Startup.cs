@@ -1,4 +1,7 @@
 using KRMApiResume.Data;
+using KRMDataManager.Library.DataAccess;
+using KRMDataManager.Library.Interfaces;
+using KRMDataManager.Library.Internal.DataAccess;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,6 +30,30 @@ namespace KRMApiResume
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            //Raises services as a singleton. Only one instance of DBClient during our program
+            /*
+             In the preceding code, the BooksService class is 
+            registered with DI to support constructor injection in consuming classes. 
+            The singleton service lifetime is most appropriate 
+            because BooksService takes a direct dependency on MongoClient. 
+            Per the official Mongo Client reuse guidelines, MongoClient should 
+            be registered in DI with a singleton service lifetime.
+             */
+            services.AddSingleton<IDbClient, DbClient>();
+
+
+            //Configuration for Data Access for MongoDb
+            services.Configure<MongoDataAccess>(Configuration.GetSection("BookStoreDatabase"));
+            //For services to work for BookCollection
+            /*
+             With a transient service, 
+            a new instance is provided every time a service 
+            instance is requested whether it is in the scope of the same 
+            HTTP request or across different HTTP requests.*/
+            services.AddTransient<IBookServices, BookDataServices>();
+
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
@@ -34,6 +61,13 @@ namespace KRMApiResume
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddSwaggerDocument(settings =>
+            {
+                settings.Title = "Karl Api";
+            });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,6 +91,10 @@ namespace KRMApiResume
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            //Setup for swagger
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
 
             app.UseEndpoints(endpoints =>
             {

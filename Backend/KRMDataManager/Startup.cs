@@ -27,8 +27,14 @@ namespace KRMDataManager
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            
-           // Add dependency Injection for DBContext Class
+
+            //
+         
+           // Add services to the container.
+            //services.Configure<MongoDataAccess>(
+            //builder.Configuration.GetSection("BookStoreDatabase"));
+
+            // Add dependency Injection for DBContext Class
             services.AddDbContext<ContactDBContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
         }
