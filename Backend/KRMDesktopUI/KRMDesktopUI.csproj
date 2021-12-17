@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\KRMApiResume\KRMApiResume.csproj" />
     <ProjectReference Include="..\KRMDataManager.Library\KRMDataManager.Library.csproj" />
   </ItemGroup>
 

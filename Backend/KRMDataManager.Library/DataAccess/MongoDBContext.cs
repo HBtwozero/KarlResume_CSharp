@@ -9,10 +9,10 @@ using System.Text;
 
 namespace KRMDataManager.Library.DataAccess
 {
-    public class DbClient : IDbClient
+    public class MongoDBContext : IMongoDbContext
     {
         private readonly IMongoCollection<BookModel> _books;
-        public DbClient(IOptions<MongoDataAccess> mongoDataAccess)
+        public MongoDBContext(IOptions<MongoDataAccess> mongoDataAccess)
         {
             var mongoClient = new MongoClient(mongoDataAccess.Value.ConnectionString);
             var mongoDatabase = mongoClient.GetDatabase(mongoDataAccess.Value.DatabaseName);

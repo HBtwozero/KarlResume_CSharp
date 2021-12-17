@@ -23,14 +23,14 @@ namespace KRMDesktopUI
     public partial class MainWindow : Window
     {
         private readonly IBookServices _bookServices;
-        private readonly IDbClient dbClient;
-        public MainWindow(IDbClient DbClient)
+        private readonly IMongoDbContext mongoDbContext;
+        public MainWindow(IMongoDbContext context)
         {
             InitializeComponent();
             //Dependency Injection to create new instance
             // _bookServices = bookServices;
-            dbClient = DbClient;
-            _bookServices = (IBookServices)dbClient.GetBooksCollection();
+            mongoDbContext = context;
+            _bookServices = (IBookServices)mongoDbContext.GetBooksCollection();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

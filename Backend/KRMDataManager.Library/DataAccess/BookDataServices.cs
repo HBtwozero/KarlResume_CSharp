@@ -10,9 +10,9 @@ namespace KRMDataManager.Library.DataAccess
     public class BookDataServices : IBookServices
     {
         private readonly IMongoCollection<BookModel> _books;
-        public BookDataServices(IDbClient dbClient)
+        public BookDataServices(IMongoDbContext dbContext)
         {
-            _books = dbClient.GetBooksCollection();
+            _books = dbContext.GetBooksCollection();
         }
         public BookModel AddBook(BookModel book)
         {

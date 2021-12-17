@@ -40,7 +40,7 @@ namespace KRMApiResume
             Per the official Mongo Client reuse guidelines, MongoClient should 
             be registered in DI with a singleton service lifetime.
              */
-            services.AddSingleton<IDbClient, DbClient>();
+            services.AddSingleton<IMongoDbContext, MongoDBContext>();
 
 
             //Configuration for Data Access for MongoDb

@@ -15,12 +15,46 @@ using System.Windows;
 
 namespace KRMDesktopUI
 {
-    /// <summary>
+
+
+
+  
+    // <summary>
     /// Interaction logic for App.xaml
     /// </summary>
     public partial class App : Application
-    {
+     {
 
+        public App()
+        {
+
+            var builder = Host.CreateDefaultBuilder()
+                .ConfigureServices((hostContext, services) =>
+                {
+
+                    services.AddScoped<IMongoDbContext, MongoDBContext>();
+                    services.AddSingleton<MainWindow>();
+                });
+
+            var host = builder.Build();
+
+            using (var serviceScope = host.Services.CreateScope())
+            {
+                var services = serviceScope.ServiceProvider;
+                try
+                {
+                    var masterWindow = services.GetRequiredService<MainWindow>();
+                    masterWindow.Show();
+
+                    Console.WriteLine("Success");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error Occured" + ex.Message);
+                }
+            }
+        }
+/* 
 
         //Very Good Example to do Fo rmongo DB
         //https://www.thecodebuzz.com/wpf-mongodb-csharp-with-example/
@@ -41,7 +75,7 @@ namespace KRMDesktopUI
         { 
            
             //All dependencies can be added to the DI system 
-           services.AddScoped<IDbClient, DbClient>();
+           services.AddScoped<IMongoDbContext, MongoDBContext>();
 
             services.Configure<MongoDataAccess>(configuration.GetSection("BookStoreDatabase"));
 
@@ -71,7 +105,7 @@ namespace KRMDesktopUI
                 await host.StopAsync(TimeSpan.FromSeconds(5));
             }
             base.OnExit(e);
-        }
+        }*/
        
     }
 }

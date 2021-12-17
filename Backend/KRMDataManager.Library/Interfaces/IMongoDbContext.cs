@@ -6,7 +6,7 @@ using System.Text;
 
 namespace KRMDataManager.Library.Interfaces
 {
-   public interface IDbClient
+    public interface IMongoDbContext
     {
         IMongoCollection<BookModel> GetBooksCollection();
     }
