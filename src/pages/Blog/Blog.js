@@ -69,7 +69,7 @@ const Blog = () => {
         <h6 className="">Coming Soon</h6>
       </Grid> */}
       <Typography variant="h4">Articles</Typography>
-      <Grid container spacing={3}>
+      {/* <Grid container spacing={3}>
         <Grid item xs={12} sm={6} md={4}>
           <Card className={classes.card}>
             <CardActionArea>
@@ -230,7 +230,7 @@ const Blog = () => {
             </CardActions>
           </Card>
         </Grid>
-      </Grid>
+      </Grid> */}
       <Box my={4} className={classes.paginationContainer}>
         <Pagination count={10} />
       </Box>
