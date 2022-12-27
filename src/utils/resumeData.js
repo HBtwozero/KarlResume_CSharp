@@ -8,7 +8,7 @@ import {
   LinkedIn,
   GitHub,
   Telegram,
-  WebOutlined
+  WebOutlined,
 } from "@material-ui/icons";
 import BookIcon from "@material-ui/icons/Book";
 import VideogameAssetIcon from "@material-ui/icons/VideogameAsset";
@@ -23,14 +23,14 @@ import softwareImg from "../assets/images/software.jpeg";
 import webdevImg from "../assets/images/webdevImg.png";
 import IoTImg from "../assets/images/IoTImg.jpg";
 import robotImg from "../assets/images/robotImg.jpg";
-export default {
+const resume = {
   name: "Karl Doudy Angrand",
   title: "Electrical Engineer",
   displayImage: "displayImage.jpg",
   birthday: "N/A",
   email: "kangrand@ycp.edu",
   address: "York PA, USA",
-  phone: "N/A",
+  phone: "717-471-1782",
 
   socials: {
     // Facebook: {
@@ -39,24 +39,24 @@ export default {
     //   icon: <Facebook />
     // },
     Twitter: {
-      link: "https://www.twitter.com/",
+      link: "https://twitter.com/KarlDoudy",
       text: "Karl Doudy",
-      icon: <Twitter />
+      icon: <Twitter />,
     },
     linkedIn: {
-      link: "https://www.linkedin.com/",
+      link: "https://www.linkedin.com/in/karl-doudy-angrand-4661a4119/",
       text: "KarlAngrand",
-      icon: <LinkedIn />
+      icon: <LinkedIn />,
     },
     Github: {
-      link: "https://www.github.com/",
+      link: "https://github.com/HBtwozero",
       text: "HBtwozero",
-      icon: <GitHub />
-    }
+      icon: <GitHub />,
+    },
   },
 
   about:
-    "HI THERE! I am Karl Angrand. My passion is using engineering to improve people's live, and giving them the tools they need to do the same" +
+    "Hi THERE! I am Karl Angrand. My passion is using engineering to improve people's live, and giving them the tools they need to do the same" +
     "\n\n" +
     "I received my bachelor degree in Electrical Engineering from York College of Pennsylvania." +
     "\n\n" +
@@ -67,20 +67,20 @@ export default {
       title: "Electrical Manufacturing Engineering 2",
       description:
         "Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.",
-      date: "September 2020 - Present"
+      date: "September 2020 - Present",
     },
     {
       title: "Work 2",
       description:
         "So insisted received is occasion advanced honoured. Among ready to which up. Attacks smiling and may out assured moments man nothing outward.",
-      date: "2008 - 2010"
+      date: "2008 - 2010",
     },
     {
       title: "Work 3",
       description:
         "Excited him now natural saw passage offices you minuter. At by asked being court hopes. Farther so friends am to detract.",
-      date: "2005 - 2008"
-    }
+      date: "2005 - 2008",
+    },
   ],
 
   // education: [
@@ -107,39 +107,39 @@ export default {
     {
       school: "York College of PA, USA",
       date: "January 2017 - August 2020",
-      degree: "Bachelor of Science In Electrical Engineering"
+      degree: "Bachelor of Science In Electrical Engineering",
     },
     {
       school: "Harrisburg Area Community College, USA",
       date: "Aug 2014 - December 2016",
-      degree: "Associate of Science in Physics"
+      degree: "Associate of Science in Physics",
     },
     {
       school: "Institution Univers, Haiti",
       date: "Sep 1998 - Dec 2014",
-      degree: "High School Diploma"
-    }
+      degree: "High School Diploma",
+    },
   ],
   skills: [
     {
       title: "Electrical",
-      type: ["PCB Design/ Altium", "SolidsWork", "Linux"]
+      type: ["PCB Design/ Altium", "SolidsWork", "Linux"],
     },
 
     {
       title: "Programming/Framework",
-      type: ["React.js", "Node.js", "C# & C", "Python"]
+      type: ["React.js", "Node.js", "C# & C", "Python"],
     },
     {
       title: "Tranlators",
-      type: ["French", "English", "Haitian Creole"]
-    }
+      type: ["French", "English", "Haitian Creole"],
+    },
   ],
   certificates: [
     {
       title: "Web Developer Bootcamp",
-      date: " Expected completion date -  April 2020"
-    }
+      date: " Expected completion date -  April 2020",
+    },
     // {
     //   title:
     //     "Digital Marketing Certificate, Google Fundamental Digital Marketing",
@@ -150,43 +150,41 @@ export default {
     {
       title: "Altium Designer",
       description: "Coming Soon.",
-      icon: <WebOutlined />
+      icon: <WebOutlined />,
     },
     {
       title: "Translation Services",
       description: "Coming Soon.",
-      icon: <AssignmentOutlined />
+      icon: <AssignmentOutlined />,
     },
     {
       title: "Web Development",
       description: "Coming Soon",
-      icon: <WebOutlined />
-    }
+      icon: <WebOutlined />,
+    },
   ],
 
   employments: [
     {
       firm: "Electrical Manufacturing Engineering 2 at Becton Dickinson",
       date: "September 2020 - Present",
-      desc: 
-      "Develop and execute solutions for obsolete components, including alternate sourcing, alternate components or PC board re-design and re-layout. Develop and execute substantive testing and verification, and documentation activities. Design, build, test, and document simple to moderately complex manufacturing assembly fixtures, test tooling, and test fixtures. Analyze field and/or manufacturing failures of electronic and electrical components, sub-assemblies, and instruments, and provide corrective and preventative solutions and action"
-      
+      desc: "Develop and execute solutions for obsolete components, including alternate sourcing, alternate components or PC board re-design and re-layout. Develop and execute substantive testing and verification, and documentation activities. Design, build, test, and document simple to moderately complex manufacturing assembly fixtures, test tooling, and test fixtures. Analyze field and/or manufacturing failures of electronic and electrical components, sub-assemblies, and instruments, and provide corrective and preventative solutions and action",
     },
     {
       firm: "Professional Engineering Intern at Becton Dickinson",
       date: "January 2019 - December 2019",
-      desc: "Supported Diagnostic Systems products and product assemblies throughout production life and service (sustaining engineering). Utilized troubleshooting skills with hands on approach to identify root cause and corrective actions. Provided hands on engineering support to production process including design, build and/or testing of fixtures and prototypes. Directly applied knowledge in electronics and electro-optics to execute overall project assignments. Conducted project work in compliance with BD internal processes, ISO 9001, and FDA CGMP standards for the design of Medical Devices. Interacted closely with software, systems, mechanical and electrical engineering functions to develop comprehensive solutions to design problems."
+      desc: "Supported Diagnostic Systems products and product assemblies throughout production life and service (sustaining engineering). Utilized troubleshooting skills with hands on approach to identify root cause and corrective actions. Provided hands on engineering support to production process including design, build and/or testing of fixtures and prototypes. Directly applied knowledge in electronics and electro-optics to execute overall project assignments. Conducted project work in compliance with BD internal processes, ISO 9001, and FDA CGMP standards for the design of Medical Devices. Interacted closely with software, systems, mechanical and electrical engineering functions to develop comprehensive solutions to design problems.",
     },
     {
       firm: "Electrical Engineering Intern at RMF Engineering",
       date: "May 2018 - August 2018",
-      desc: "Developed wiring and panel diagrams for control panels using AutoCAD. Created drafts and blueprints in CAD & REVIT following Clients technical specifications. Performed design process for renovations and modifications of existing products. Designed 2D and 3D illustrations from technical specifications, and architectural plans as per the sketches. Converted hand sketches into detailed drawings."
+      desc: "Developed wiring and panel diagrams for control panels using AutoCAD. Created drafts and blueprints in CAD & REVIT following Clients technical specifications. Performed design process for renovations and modifications of existing products. Designed 2D and 3D illustrations from technical specifications, and architectural plans as per the sketches. Converted hand sketches into detailed drawings.",
     },
     {
       firm: "Peer Tutor at Harrisburg Area Community College",
       date: "January 2015 - January 2017",
-      desc: "Assist, evaluate, motivate, develop and integrate students learning. Communicate and build a rapport with students. Offer personal support on a range of topics that might include academic difficulty, emotional and social problems, illness or a traumatic life event. provided support in classes like Math (Algebra, Calculus, Liner Algebra), Physics, Chemistry, and English as a second language "
-    }
+      desc: "Assist, evaluate, motivate, develop and integrate students learning. Communicate and build a rapport with students. Offer personal support on a range of topics that might include academic difficulty, emotional and social problems, illness or a traumatic life event. provided support in classes like Math (Algebra, Calculus, Liner Algebra), Physics, Chemistry, and English as a second language ",
+    },
   ],
   portfolio: [
     // {
@@ -197,40 +195,40 @@ export default {
     {
       course: "Microcontroller",
       image: microcontrollerImg,
-      title: "Coming Soon"
+      title: "Coming Soon",
     },
     {
       course: "Robotics",
       image: robotImg,
-      title: "Coming Soon - TBD"
+      title: "Coming Soon - TBD",
     },
     {
       course: "IoT",
       image: IoTImg,
-      title: "Coming Soon - TBD"
+      title: "Coming Soon - TBD",
     },
     {
       course: "Software Development",
       image: softwareImg,
-      title: "Coming Soon - TBD"
+      title: "Coming Soon - TBD",
     },
     {
       course: "Web Development",
       image: webdevImg,
-      title: "Coming Soon - TBD"
-    }
+      title: "Coming Soon - TBD",
+    },
   ],
   hobbies: [
     {
       title: "Reading",
       desc: "I am an Electrical Engineer",
-      icon: <BookIcon />
+      icon: <BookIcon />,
     },
     {
       title: "Soccer",
       desc: "TBD",
-      icon: <VideogameAssetIcon />
-    }
+      icon: <VideogameAssetIcon />,
+    },
     // {
     //   title: "Football",
     //   desc: "I am a database administrator",
@@ -241,5 +239,7 @@ export default {
     //   desc: "I am a database administrator",
     //   icon: <ExploreIcon />
     // }
-  ]
+  ],
 };
+
+export default resume;
