@@ -1,5 +1,5 @@
 # KarlResume_CSharp
-This is my resume with ReactJs for the front end and C# as web Api
+This is my resume with ReactJs for the front end
 
 # https://code-maze.com/net-core-series/
 
@@ -15,14 +15,3 @@ https://www.youtube.com/watch?v=z0QpTl5-0Bk&list=PL4cUxeGkcC9iWstfXntcj8f-dFZ4Ut
 
 199.36.158.100
 https://www.youtube.com/watch?v=Bnd4IO3f2hU
-
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyAFwJm-lTBFPsnSIiFKw4lYAm06H9HRsjA",
-  authDomain: "karl-resume-2021.firebaseapp.com",
-  projectId: "karl-resume-2021",
-  storageBucket: "karl-resume-2021.appspot.com",
-  messagingSenderId: "504754857144",
-  appId: "1:504754857144:web:883253b7cbfa565548804d",
-  measurementId: "G-1KVFT2E2MY"
-};
