@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import Timeline from "@material-ui/lab/Timeline";
 import TimelineItem from "@material-ui/lab/TimelineItem";
 import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
@@ -8,7 +8,16 @@ import TimelineDot from "@material-ui/lab/TimelineDot";
 import { Typography } from "@material-ui/core";
 import WorkIcon from "@material-ui/icons/Work";
 import styles from "./Timeline.module.css";
-const CustomTimeline = ({ title, icon, children }) => {
+
+type CustomeTimelineProps ={
+  title?: string,
+ 
+ 
+  icon?: JSX.Element,
+  children?: React.ReactNode;
+  // children?: JSX.Element|JSX.Element[];
+}
+const CustomTimeline = ({ title, icon, children }:CustomeTimelineProps) => {
   return (
     <Timeline className={styles.timeline}>
       {/* Item Header */}

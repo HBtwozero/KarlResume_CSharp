@@ -12,7 +12,14 @@ import CustomButton from "../Button/Button";
 import GetAppIcon from "@material-ui/icons/GetApp";
 import Image from "next/image";
 import Link from "next/link";
-const CustomTimelineItem = ({ title, text, link }) => {
+type CustomeTimelineItemProps ={
+  title?: string,
+  text?: string,
+  link?:string,
+  icon?:string,
+  children?: JSX.Element;
+}
+const CustomTimelineItem = ({ title, text, link }: CustomeTimelineItemProps) => {
   return (
     <TimelineItem className={styles.tika}>
       <CustomTimelineSeparator />
@@ -36,15 +43,15 @@ const CustomTimelineItem = ({ title, text, link }) => {
   );
 };
 
-const CvDownload = () => {
-  return (
-    <iframe
-      src="/assets/Karl_Doudy_Angrand_Resume.pdf"
-      type="application/pdf"
-      style={{ height: "800px", width: "500px" }}
-    />
-  );
-};
+// const CvDownload = () => {
+//   return (
+//     <iframe
+//       src="/assets/Karl_Doudy_Angrand_Resume.pdf"
+//       type="application/pdf"
+//       style={{ height: "800px", width: "500px" }}
+//     />
+//   );
+// };
 
 const Profile = () => {
   const { name, title, displayImage, birthday, email, socials } = resume;
@@ -84,7 +91,6 @@ const Profile = () => {
         <div>
           <a
             href="/assets/Karl_Doudy_Angrand_Resume.pdf"
-            without
             rel="noopener noreferrer"
             target="_blank"
           >
