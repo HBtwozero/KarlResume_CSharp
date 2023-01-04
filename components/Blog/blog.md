@@ -1,0 +1,1 @@
+https://blog.logrocket.com/comparing-typescript-and-proptypes-in-react-applications/

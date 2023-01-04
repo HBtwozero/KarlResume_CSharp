@@ -1,0 +1,68 @@
+.timeline {
+    padding: 0 !important;
+    margin-left: -250px;
+    /* align-items: flex-start; */
+    /* display: flex;
+    flex-direction: column;
+    */
+    /**/
+}
+
+.timeline .MuiTimelineItem-missingOppositeContent:before {
+    display: none;
+}
+
+
+/* Header */
+
+.timeline .timeline_dot_header {
+    color: rgb(118, 151, 65) !important;
+    background-color: var(--main-color) !important;
+    font-size: small !important;
+    padding: 10px !important;
+}
+
+.timeline .timeline_dot {
+    color: rgb(118, 151, 65) !important;
+    border-color: var(--main-color) !important;
+    padding: 2px !important;
+}
+
+
+/* Header Title */
+
+.timeline .timeline_header {
+    padding-top: 7px;
+}
+
+.timeline .timeline_firstItem {
+    min-height: 80px !important;
+    /* margin-left: -230px; */
+    margin-left: 15px;
+}
+
+.timeline .MuiTimelineItem-root {
+    min-height: 0px;
+}
+
+
+/* Remaining Items */
+
+.timeline .MuiTimelineConnector-root {
+    background-color: #eeeeee !important;
+}
+
+.timeline .timeline_dot_header>.MuiSvgIcon-root {
+    font-size: 20px;
+    background-color: darkslategray;
+}
+
+.timeline .separator_padding {
+    padding-left: 17px !important;
+}
+
+
+/* .timeline .timeline_content {
+    padding-top: 0px !important;
+    margin-bottom: 20px;
+} */
