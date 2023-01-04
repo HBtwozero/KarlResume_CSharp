@@ -53,7 +53,10 @@ const Header = (props) => {
             : `${styles.header_link}`
         }
       >
-        <Navbar.Brand className={styles.header_home} icon={<HomeRounded />}>
+        {/* <Navbar.Brand className={styles.header_home} icon={<HomeRounded />}>
+          <HomeRounded />
+        </Navbar.Brand> */}
+         <Navbar.Brand className={styles.header_home}>
           <HomeRounded />
         </Navbar.Brand>
       </Link>
