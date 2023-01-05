@@ -4,11 +4,11 @@ import "./Home.module.css";
 import { Grid, Icon, TextField, Typography } from "@material-ui/core";
 import resumeData from "../../config/utils/resumeData";
 
-import { CustomTimeline } from "../../components/Timeline/Timeline";
+import CustomTimeline from "../../components/Timeline/Timeline";
 import { CustomTimelineSeparator } from "../../components/Timeline/Timeline";
 import WorkIcon from "@material-ui/icons/Work";
 import SchoolIcon from "@material-ui/icons/School";
-import { CustomButton } from "../../components/Button/Button";
+import CustomButton from "../../components/Button/Button";
 
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import TimelineItem from "@material-ui/lab/TimelineItem";

@@ -32,7 +32,7 @@
         "start": "next start",
         "type-check": "tsc",
         "dev": "next dev",
-        "build": "CI=false && next build",
+        "build": "next build",
         "lint": "next lint"
     },
     "eslintConfig": {
